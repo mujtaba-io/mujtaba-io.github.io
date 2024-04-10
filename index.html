@@ -2,26 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<script>
-// Function to fetch webpage content and display it in container
-function fetchAndDisplayWebpage(url) {
-    fetch(url)
-        .then(response => response.text())
-        .then(html => {
-            // Set the entire fetched HTML content as the current page's HTML
-            document.open();
-            document.write(html);
-            document.close();
-        })
-        .catch(error => {
-            console.error('Error fetching webpage:', error);
-        });
-}
-
-// Call the function with the URL of the webpage you want to fetch and display
-fetchAndDisplayWebpage('https://mujtaba-io-pluto.hf.space');
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pluto</title>
+<style>
+    /* Remove default iframe border */
+    iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 </head>
 <body>
+
+<iframe
+    src="https://mujtaba-io-pluto.hf.space"
+    frameborder="0"
+    scrolling="auto"
+></iframe>
+
 </body>
 </html>
