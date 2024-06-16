@@ -1,19 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Pluto</title>
-<style type="text/css">
-    body {scrolling:no;
-}
-    iframe {position:absolute;
-    z-index:1;
-    top:0px;
-    left:0px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujtaba Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <style>
+        /* Base styling for the light theme */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            /*text-align: justify;*/
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #f0f0f0;
+        }
+
+        nav .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        /* Main body styling */
+        .main-content {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #f0f0f0;
+            color: #000000;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
+            background-color: #f0f0f0;
+            padding: 1.0rem;
+            text-align: left;
+        }
+
+        table td {
+            padding: 1.0rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+    </style>
 </head>
 <body>
-    <iframe src="https://mujtaba-io-pluto.hf.space" height="100%" width="100%" frameborder="0"></iframe>
+    <nav>
+        <div class="title">Mujtaba's Portfolio</div>
+        <div class="links">
+            <a href="https://gameidea.org/about" style="margin-right: 8px;">GameIdea</a>
+            <a href="https://github.com/mujtaba-io" style="margin-right: 8px;">GitHub</a>
+            <a href="mailto:muhammadmujtaba150@gmail.com" style="margin-right: 8px;">Contact</a>
+        </div>
+       
+    </nav>
+
+    <div class="main-content">
+        <h1>About me</h1>
+        <p>
+            This is the list of some of my show-able projects I made since I started software development in grade 9 as a 'hobby'.<br>
+            The projects here <b>are not small university projects</b> but real-world projects that I made for my own use.<br>
+            To contact me, mail to <a href="mailto:muhammadmujtaba150@gmail.com">muhammadmujtaba150@gmail.com</a><br>
+            or visit my github profile <a href="https://github.com/mujtaba-io">here</a>.
+        </p>
+
+        <h1>Projects</h1>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Image (click to expand)</th>
+            </tr>
+            <tr>
+                <td><a href="https://gameidea.org">gameidea.org</a></td>
+                <td>My personal gamedev blog. I write about game programming techniques, shaders and minimal art here. Made in WordPress.</td>
+                <td><a href="./assets/gameidea.jpg" target="_blank"><img src="./assets/gameidea.jpg" alt="GameIdea" style="width: auto; height: 128px;"></a></td>
+            </tr>
+            <tr>
+                <td><a href="https://clipboard.gameidea.org">The Internet Clipboard</a></td>
+                <td>A web app to move files and between devices connected to internet. Made in Flask+Flutter.</td>
+                <td><a href="./assets/clipboard.jpg" target="_blank"><img src="./assets/clipboard.jpg" alt="The Internet Clipboard" style="width: auto; height: 128px;"></a></td>
+            </tr>
+
+            <tr>
+                <td><a href="mujtaba-io-pluto.hf.space">Pluto (social platform)</a></td>
+                <td>A fun platform to spam anything. It is similar to reddit and facebook in some way. made in Django+Bootstrap.</td>
+                <td>
+                    <div style="display: flex;">
+                        <a href="./assets/pluto-1.jpg" target="_blank"><img src="./assets/pluto-1.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                        <a href="./assets/pluto-2.jpg" target="_blank"><img src="./assets/pluto-2.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                    </div>
+                </td>
+           
+            </tr>
+
+            <tr>
+                <td><a href="#">JobApp</a></td>
+                <td>A fiverr alternative freelance platform. Made in Django+Flutter.</td>
+                <td><a href="./assets/job-app.jpg" target="_blank"><img src="./assets/job-app.jpg" alt="JobApp" style="width: auto; height: 128px;"></a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Apna Ghar Construction</a></td>
+                <td>A platform that brings together construction workers and clients.</td>
+                <td><a href="./assets/apna-ghar-construction.jpg" target="_blank"><img src="./assets/apna-ghar-construction.jpg" alt="Apna Ghar Construction" style="width: auto; height: 128px;"></a></td>
+
+            </tr>
+            <tr>
+                <td><a href="#">Stories</a></td>
+                <td>A platform to share stories & chat. made in Flutter.</td>
+                <td>
+                    <div style="display: flex;">
+                        <a href="./assets/stories-1.jpg" target="_blank"><img src="./assets/stories-1.jpg" alt="Stories" style="width: auto; height: 128px; margin-right: 4px;"></a>
+                        <a href="./assets/stories-2.jpg" target="_blank"><img src="./assets/stories-2.jpg" alt="Stories" style="width: auto; height: 128px; margin-right: 4px;"></a>
+                        <a href="./assets/stories-3.jpg" target="_blank"><img src="./assets/stories-3.jpg" alt="Stories" style="width: auto; height: 128px;"></a>
+                    </div>
+                </td>
+            
+            </tr>
+            <tr>
+                <td><a href="#">Ride Share</a></td>
+                <td>A platform to share rides between people that are going to the same destination most of the time. Made in Flutter.</td>
+                <td>
+                    <div style="display: flex;">
+                        <a href="./assets/ride-share.jpg" target="_blank"><img src="./assets/ride-share.jpg" alt="Stories" style="width: auto; height: 128px; margin-right: 4px;"></a>
+                        <a href="./assets/ride-share-2.jpg" target="_blank"><img src="./assets/ride-share-2.jpg" alt="Stories" style="width: auto; height: 128px; margin-right: 4px;"></a>
+                    </div>
+                </td>
+           
+            </tr>
+            <tr>
+                <td><a href="#">Top-Down Tanks</a></td>
+                <td>A multiplayer tanks game where you make teams and fight each other. Godot, GLSL, GDScript.</td>
+                <td>
+                    <div style="display: flex;">
+                        <a href="./assets/top-down-tanks.jpg" target="_blank"><img src="./assets/top-down-tanks.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                        <a href="./assets/top-down-tanks-2.jpg" target="_blank"><img src="./assets/top-down-tanks-2.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">Evil King Game 3D (incomplete)</a></td>
+                <td>The protagonist is kidnapped by the men of tyrannical king and shifted to a deep dungeon far from any city. The protagonist becomes suspicious of king's intentions and therefore plans a dungeon-break. As he swiftly comes out, he finds a scroll from an ancient pious man... Godot, GLSL, GDScript.</td>
+                <td>
+                    <div style="display: flex;">
+                        <a href="./assets/evil-king-game-3.jpg" target="_blank"><img src="./assets/evil-king-game-3.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                    <a href="./assets/evil-king-game-1.jpg" target="_blank"><img src="./assets/evil-king-game-1.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">Tale of Pirates 3D (incomplete)</a></td>
+                <td>A game where you are a pirate and rival other pirates. I could not complete this complex game. Godot, GLSL, GDScript.</td>
+                <td>
+                    <div style="display: flex;">
+                        <a href="./assets/tale-of-pirates-1.jpg" target="_blank"><img src="./assets/tale-of-pirates-1.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                        <a href="./assets/tale-of-pirates-2.jpg" target="_blank"><img src="./assets/tale-of-pirates-2.jpg" alt="Stories" style="width: 90px; height: 128px; margin-right: 4px; object-fit: cover;"></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        Made with ❤️ by Mujtaba
+    </footer>
 </body>
 </html>
